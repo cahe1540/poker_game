@@ -1,0 +1,390 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body{
+		background:url("../img/background.jpg") repeat center center/cover;
+		height:120vh;
+}
+
+/*Global*/
+button, select{
+	outline:none;
+}
+
+
+/*header and game buttons*/
+header{
+	height:10rem;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+}
+
+header .title-wrapper{
+	height:10rem;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(14, 84, 127, .7);
+}
+
+header .title-wrapper h1{
+	font-size: 40px;
+	color:white;
+}
+
+header .game-buttons{
+	background: rgba(14, 84, 127, .7);
+	height:6rem;
+	width:72%;
+	margin-top:.5rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.game-buttons .inner-wrapper{
+	display: grid;
+	grid-template-rows: repeat(3,1fr);
+}
+
+header button{
+	padding:5px 4px;
+	background:silver;
+	margin-bottom:3px;
+}
+
+/*Dealer Display*/
+
+.container{
+	width:72%;
+	margin:auto;
+}
+
+.player{
+	height:43vh;
+	background: rgba(125,125,125,.97);
+	margin-bottom:1rem;
+	margin-top:1rem;
+	border-radius: 5px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.player .dealer-panel{
+	background:rgba(201,201,201,.6);
+	width:110px;
+	height:215px;
+	font-size:18px;
+	text-align:center;
+	color:#222222;
+	margin-left:1rem;
+	margin-top:1.5rem;
+}
+
+/*player display*/
+.player .player-panel{
+	background:rgba(201,201,201,.6);
+	text-align:center;
+	width:110px;
+	height:215px;
+	font-size:18px;
+	color:#222222;
+	margin-left:1rem;
+	margin-top:1.5rem;
+}
+
+.player p{
+	margin-bottom:2.5rem;
+}
+
+.round-status{
+	margin-top:2rem;
+}
+
+.score-change{
+	position:relative;
+	bottom:1rem;
+}
+
+.player-panel button{
+	width:6rem;
+	margin-bottom:5px;
+	background:silver;
+}
+
+.player .card-area{
+	width:76%;
+	height:13rem;
+	background:rgba(183,183,183,.4);
+	margin-top:1.5rem;
+	margin-right:6rem;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.player .card-area .p1-instructions{
+	width:200px;
+	height:100px: 
+	background:#efefef;
+	font-size:12px;
+	position:relative;
+	right:130px;
+	bottom:120px;
+
+}
+
+.player .deck{
+	margin-right:3rem;
+}
+
+.dealer-value{
+	margin-left:130px;
+}
+
+/*help area*/
+.box-help{
+	padding-top:.5rem;
+	background:#fff;
+	width:345px;
+	height:137px;
+	position:absolute;
+	bottom:360px;
+	left:713px;
+	background:rgba(255,255,255, .93);
+	display:none;
+	border:1px #000 solid;
+	border-radius:5px;
+}
+
+.box-help p{
+	margin-left:.5rem;
+	font-size:14px;
+}
+
+/*rules area*/
+.box-rules{
+	padding-top:.5rem;
+	background:#fff;
+	width:390px;
+	height:390px;
+	position:absolute;
+	bottom:140px;
+	left:713px;
+	background:rgba(255,255,255, .93);
+	display:none;
+	border:1px #000 solid;
+	border-radius:5px;
+}
+
+.box-rules p{
+	margin-left:.5rem;
+	font-size:14px;
+}
+
+
+
+@media (max-width: 1100px){
+
+	body{
+		font-size: 12px;
+	}
+
+	img{
+		
+		
+	}
+
+	.cards{
+		width:11rem;
+		height:9rem;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.deck{
+		display:none;
+	}
+
+	.dealer-value{
+		position: relative;
+		right:3rem;
+	}
+
+	.player-value{
+		position: relative;
+		left:5rem;
+	}
+
+	.box-help{
+		position: absolute;
+		left:50px;
+		bottom:33rem;
+	}
+
+	.box-rules{
+		position: absolute;
+		left:10px;
+		bottom:19.3rem;
+	}
+
+	.player .card-area .cards{
+		display:grid;
+		grid-template-columns: repeat(5,30%);
+	}
+
+ 	.player .player-panel, .player .dealer-panel{
+ 		height:12.8rem;
+ 	}
+
+ 	.player .player-panel{
+ 		font-size:12px;
+ 	}
+
+ 	.player-panel button{
+ 		font-size:12px;
+ 		width:92%;
+ 	}
+
+}
+
+@media (max-width: 870px){
+
+	body{
+		font-size: 12px;
+	}
+
+	img{
+		width:4rem;
+		
+	}
+
+	.cards{
+		width:11rem;
+		height:9rem;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.deck{
+		display:none;
+	}
+
+	.dealer-value{
+		position: relative;
+		right:3rem;
+	}
+
+	.player-value{
+		position: relative;
+		left:5rem;
+	}
+
+	.box-help{
+		position: absolute;
+		left:50px;
+		bottom:33rem;
+	}
+
+	.box-rules{
+		position: absolute;
+		left:10px;
+		bottom:19.3rem;
+	}
+
+	.player .card-area .cards{
+		display:grid;
+		grid-template-columns: repeat(5,20%);
+	}
+
+ 	.player .player-panel, .player .dealer-panel{
+ 		height:12.8rem;
+ 	}
+
+ 	.player .player-panel{
+ 		font-size:12px;
+ 	}
+
+ 	.player-panel button{
+ 		font-size:12px;
+ 		width:92%;
+ 	}
+
+}
+
+@media (max-width: 777px){
+
+	body{
+		font-size: 12px;
+	}
+
+	img{
+		width:3.5rem;
+		
+	}
+
+	.cards{
+		width:11rem;
+		height:9rem;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		position:relative;
+		left:1rem;
+	}
+
+	.deck{
+		display:none;
+	}
+
+	.dealer-value{
+		position: relative;
+		right:3rem;
+	}
+
+	.player-value{
+		position: relative;
+		left:5rem;
+	}
+
+	.box-help{
+		position: absolute;
+		left:50px;
+		bottom:33rem;
+	}
+
+	.box-rules{
+		position: absolute;
+		left:10px;
+		bottom:19.3rem;
+	}
+
+	.player .card-area .cards{
+		display:grid;
+		grid-template-columns: repeat(5,10%);
+	}
+
+ 	.player .player-panel, .player .dealer-panel{
+ 		height:12.8rem;
+ 	}
+
+ 	.player .player-panel{
+ 		font-size:12px;
+ 	}
+
+ 	.player-panel button{
+ 		font-size:12px;
+ 		width:92%;
+ 	}
+
+}

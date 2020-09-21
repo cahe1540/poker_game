@@ -1,0 +1,61 @@
+/*
+	Card class(){
+
+	}	
+	
+	Hand class(){
+
+	}
+
+
+	Deck class(){
+
+	}
+
+	player class(){
+	
+	}
+*/
+
+
+
+GameController (){
+
+	/*
+	 Data structure to keep track of game.
+	 Create necessary objects.
+	*/
+
+
+	return{
+		copy of this;
+	}
+
+}
+
+UIcontroller (){
+
+	var game; //copy of the game
+
+	/*
+	Mage Changes to Dom		
+	*/
+}
+
+controller (){
+	
+	/*
+	read from UIctrl, use data read from UIctrl
+	to update gameCtrl
+	*/
+	
+	/*
+	Set Up Event Listeners
+	*/
+	
+	init();
+
+}
+
+
+controller.init();
