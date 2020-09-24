@@ -133,7 +133,7 @@ header button{
 
 .player .card-area .p1-instructions{
 	width:200px;
-	height:100px: 
+	height:100px;
 	background:#efefef;
 	font-size:12px;
 	position:relative;
@@ -197,12 +197,7 @@ header button{
 	body{
 		font-size: 12px;
 	}
-
-	img{
-		
-		
-	}
-
+	
 	.cards{
 		width:11rem;
 		height:9rem;
