@@ -2,7 +2,7 @@
 
 ##About
 I constructed this project so that I may practice my programmign abilities. I originally wrote the game code using java. I later translated it to javascript and designed
-a simple html ui.
+a simple HTML UI.
 
 ##Description
 This project implements some ideas of object oriented programming. The most basic class in this program is the Card class. From the Card class, a Hand class, and a Deck class 
