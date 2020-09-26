@@ -12,5 +12,5 @@ keeps track of an active game of poker.
 I create a simple, responsive, HTML UI for this version of the game. This app uses DOM manipulation to update the UI and is my first attempt at implementing the model view 
 controller(MVC) model. There is a main controller class that controls all. The main controller class communicates with the game class and the UI class to run the game.
 
-###Notes
+### Notes
 If anyone wishes to download this code for educational purposes or if any one wishes to make changes to this program, feel free to download.
