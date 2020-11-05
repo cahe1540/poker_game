@@ -1,5 +1,8 @@
 # poker_game
 
+### Languages
+* HTML, CSS, JS
+
 ### About
 I constructed this project so that I may practice my programmign abilities. I originally wrote the game code using java. I later translated it to javascript and designed
 a simple HTML UI. [view project](https://cahe1540.github.io/poker_game/)
