@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Poker Game</title>
+  </head>
+  <body>
+    <header>
+      <div class="title-wrapper">
+        <h1>Poker</h1>
+      </div>
+      <div class="game-buttons">
+        <div class="inner-wrapper">
+          <button id="new-game">New Game</button>
+          <button id="rules">Rules</button>
+          <button id="help">Help</button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <section class="player">
+        <div class="dealer-panel">
+          <div><p>Dealer</p></div>
+          <div class="game-status">
+            Round Result:
+            <hr />
+            <p class="round-status">---</p>
+            <p class="score-change">--</p>
+          </div>
+        </div>
+        <div class="card-area">
+          <div class="cards dealers-cards">
+            <img src="img/DeckPattern.jpg" alt="#" class="deck" />
+            <img src="img/DeckPattern.jpg" alt="" class="Dcard-1" />
+            <img src="img/DeckPattern.jpg" alt="" class="Dcard-2" />
+            <img src="img/DeckPattern.jpg" alt="" class="Dcard-3" />
+            <img src="img/DeckPattern.jpg" alt="" class="Dcard-4" />
+            <img src="img/DeckPattern.jpg" alt="" class="Dcard-5" />
+            <div class="dealer-value">No Value</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="player">
+        <div class="player-panel">
+          <p>Player 1</p>
+          credits:
+          <hr />
+          <div class="score">0</div>
+          <button class="go">Go</button>
+          <button class="trade-cards">Trade Cards</button>
+          <button class="next-round">Next Round</button>
+        </div>
+        <div class="card-area">
+          <div class="cards player-cards">
+            <img src="img/DeckPattern.jpg" alt="" class="Pcard-1" />
+            <img src="img/DeckPattern.jpg" alt="" class="Pcard-2" />
+            <img src="img/DeckPattern.jpg" alt="" class="Pcard-3" />
+            <img src="img/DeckPattern.jpg" alt="" class="Pcard-4" />
+            <img src="img/DeckPattern.jpg" alt="" class="Pcard-5" />
+            <div class="player-value">No Value</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="box-help">
+      <p>
+        HELP:<br />
+        Click the Help Button to see this message.<br />
+        Click New Game to start a new game.<br />
+        Click Rules button to view rules.<br />
+        Click trade to replace cards in hand, may only do this once per
+        round.<br />
+        Click go when ready. <br />
+      </p>
+    </div>
+
+    <div class="box-rules">
+      <p>
+        RULES:<br /><br />
+        Both Player 1 and the dealer are assigned 5 cards, Player 1 has the
+        option to replace cards he doesn't want only once. When Player 1 is
+        ready, click go. It costs 3 credits to start a new round. Earning points
+        depends on the value of the hand. When Credits reach 0, game ends. Try
+        for the highest possible score.<br />
+        <br />
+        HAND COMBINATIONS IN INCREASING ORDER + Prize:<br />
+        TWO OF A KIND-- Only 2 cards have the same value + 6 <br />
+        TWO PAIRS -- Two sets of two of a kind + 12 <br />
+        THREE OF A KIND--Three cards with same value + 24 <br />
+        STRIAGHT--All cards have consecutive values. + 48 <br />
+        FLUSH--All cards have same suit. +102 <br />
+        FULL HOUSE--1 pair and one 3 of a kind. + 205 <br />
+        FOUR OF A KIND--4 cards have same value. +417 <br />
+        STRAIGHT FLUSH--Hand is straight and flush. + 837 <br />
+        ROYAL FLUSH--hand contains: A, J, K, Q, 10 of same suit. + 1500 <br />
+        <br />
+        Player1 wins if he has better hand than dealer In the event of a ties,
+        the player with the highest card in hand wins.
+      </p>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

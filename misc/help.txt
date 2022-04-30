@@ -1,7 +1,0 @@
-
-HELP:
-Click the Help Button to see this message.
-Click New Game to start a new game
-Click Rules button to view rules.
-Click change cards to replace cards in hand.
-Click go when ready.
